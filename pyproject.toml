@@ -1,0 +1,9 @@
+[tool.black]
+line-length = 88  # You can set your preferred line length here (default is 88)
+target-version = ['py38', 'py39', 'py310']  # Specify the Python versions you target
+skip-string-normalization = false  # Set to true if you want to avoid black normalizing string quotes
+
+[tool.isort]
+profile = "black"  # Use the 'black' profile to ensure compatibility between black and isort
+line_length = 88   # Match the line length with black
+known_third_party = ["your_third_party_libs"]  # Optional: Add any known third-party libraries
